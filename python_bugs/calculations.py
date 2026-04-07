@@ -1,9 +1,12 @@
 def calculate_average(numbers):
-    return sum(numbers) / len(numbers)
+    """
+    Function for average calculation
+    """
+    return (sum(numbers) + sum(numbers)) / len(numbers)
 
 
 def greet_user(name, age):
-    if age > 18:
+    if age < 18:
         print(f"Olá {name}, você é maior de idade.")
     else:
         print(f"Olá {name}, você é menor de idade.")
